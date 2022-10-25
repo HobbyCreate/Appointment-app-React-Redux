@@ -1,39 +1,150 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(241, 234, 227);
+}
+
+.header {
+  margin-top: 50px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-size: 4rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+nav {
+  text-align: center;
+  margin-top: 40px;
 }
 
-.App-header {
-  min-height: 100vh;
+nav .to-contact,
+nav .to-appoint {
+  font-size: 1.6rem;
+  margin: 0px 30px;
+  text-decoration: none;
+}
+
+.to-contact:active,
+.to-appoint:active {
+  color: black;
+  text-decoration: none;
+}
+
+.contact-container,
+.appointment-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+  font-size: 1rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 1.4rem;
+}
+
+.contact-Form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 400px;
+  height: 250px;
+  padding: 20px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.appointment-Form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: center;
+  width: 400px;
+  height: 310px;
+  padding: 20px 20px;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+.name, 
+.phone, 
+.email, 
+.title, 
+.contact, 
+.date, 
+.time {
+  display: flex;
+  justify-content:  space-between;
+  margin: auto 0;
+  font-size: 1.2rem;
+}
+
+input {
+  width: 60%;
+  border-radius: 5px;
+  font-size: 1.1rem;
+
+}
+
+select {
+  width: 61%;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+button{
+  font-size: 1.2rem;
+  margin: 20px 0;
+  border-radius: 5px;
+  height: 40px;
+  color: white;
+  background-color: rgb(84, 84, 74);
+}
+
+button:active {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  border-radius: 5px;
+  height: 40px;
+  color: black;
+  background-color: rgb(181, 198, 192);
+}
+
+.Tile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.15rem;
+  border: 1px solid black;
+  padding: 10px 0;
+  margin: 15px 0;
+  border-radius: 20px;
+  width: 440px;
+}
+
+/* .Tile-container-app {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.15rem;
+  border: 2px solid black;
+  padding: 10px 0;
+  margin: 15px 0;
+  border-radius: 20px;
+  width: 500px;
+} */
+
+h3, p {
+  margin: 10px;
+  margin-left: 30px;
+  font-weight: bold;
 }

@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import ContactReducer from '../features/ContactSlice';
+import AppointmentReducer from '../features/AppointmentSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    contacts: ContactReducer,
+    appointments: AppointmentReducer,
   },
 });
