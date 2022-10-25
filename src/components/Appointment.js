@@ -40,9 +40,9 @@ export const Appointment = () => {
                 <div className="title">
                     <label>Title :  </label>
                     <input
+                        required 
                         type="text"
                         placeholder="Enter Title"
-                        // title="title"
                         onChange={handleChange('title')}
                         value={title} />
                 </div>
@@ -62,7 +62,7 @@ export const Appointment = () => {
                     <input
                         type="date"
                         placeholder="Enter Date"
-                        // date="date"
+                        required
                         onChange={handleChange('date')}
                         value={date} />
                 </div>
@@ -71,7 +71,7 @@ export const Appointment = () => {
                     <input
                         type="time"
                         placeholder="Enter Time"
-                        // time="time"
+                        required
                         onChange={handleChange('time')}
                         value={time} />
                 </div>

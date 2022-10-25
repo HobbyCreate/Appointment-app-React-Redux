@@ -11,7 +11,7 @@
 }
 
 .header h1 {
-  font-size: 4rem;
+  font-size: 2.6rem;
 }
 
 nav {
@@ -21,7 +21,7 @@ nav {
 
 nav .to-contact,
 nav .to-appoint {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin: 0px 30px;
   text-decoration: none;
 }
@@ -75,15 +75,15 @@ nav .to-appoint {
   font-weight: bold;
 }
 
-.name, 
-.phone, 
-.email, 
-.title, 
-.contact, 
-.date, 
+.name,
+.phone,
+.email,
+.title,
+.contact,
+.date,
 .time {
   display: flex;
-  justify-content:  space-between;
+  justify-content: space-between;
   margin: auto 0;
   font-size: 1.2rem;
 }
@@ -101,7 +101,7 @@ select {
   font-size: 1.2rem;
 }
 
-button{
+button {
   font-size: 1.2rem;
   margin: 20px 0;
   border-radius: 5px;
@@ -143,8 +143,67 @@ button:active {
   width: 500px;
 } */
 
-h3, p {
+h3,
+p {
   margin: 10px;
   margin-left: 30px;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  nav .to-contact,
+  nav .to-appoint {
+    font-size: 1.2rem;
+  }
+
+  .contact-container,
+  .appointment-container {
+    font-size: 0.6rem;
+  }
+
+  .contact-Form {
+    width: 330px;
+    height: 250px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  .appointment-Form {
+    width: 330px;
+    height: 250px;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+
+  .name,
+  .phone,
+  .email,
+  .title,
+  .contact,
+  .date,
+  .time {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: 1rem;
+
+  }
+
+  select {
+    font-size: 1rem;
+  }
+
+  .Tile-container {
+    font-size: 1rem;
+    width: 350px;
+  }
 }
